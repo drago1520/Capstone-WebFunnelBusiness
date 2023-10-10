@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Mistrully';
+    src: url('./assets/Mistrully.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TTNorms';
+    src: url('./assets/TT-Norms-Fonts/TTNorms-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TTFors';
+    src: url('./assets/TT Fors Trial Regular.ttf') format('truetype');
+}
+
+/* Rest of your CSS styles */
+
+body{
+    background-color: #2C2C2C;
+    color: #FFFFFE;
+    display: grid;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+h3{
+    font-family: TTNorms;
+    font-size: 20pt;
+}
+h2{
+    font-size: 75pt;
+    font-family: TTNorms;
+    font-weight:bolder;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    letter-spacing: -4px;
+}
+.padding-container{
+   padding-left: 4rem;
+   padding-right: 4rem;
+}
+#top-map{
+    padding-top: 4rem;
+}
+h4{
+    font-family: Mistrully;
+    text-align: center;
+    font-size: 45pt;
+    margin: 0px;
+    position: relative;
+    top: 53px;
+    color: #CB6CE6;
+
+}
+p{
+    font-family: TTFors;
+    font-size: 10pt;
+    margin: 0px;
+    color: #DADDE4;
+}
+.yellow{
+    color: #FDF200;
+}
+.green{
+    color: #459FA4;
+}
+div[class="row gy-0"] p {
+    margin-bottom: 0.3rem;
+}
+.divider-el{
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 20px;
+    width: 100%;
+}
+#big-phones, #phones{
+    display: block;
+    max-width: 900px;
+}
+#big-phones{
+    display: none;
+}
+h5{
+    font-family: TTFors;
+    font-weight: 700;
+    font-size: 12pt;
+    color: #CB6CE6;
+}
+.damn{
+    margin-left: px;
+}
+.blue{
+    color: #4D8CF4;
+}
+.spacing-columns{
+    margin-bottom: 5rem;
+}
+.spacing-medium{
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+.red{
+    color: #FF3131;
+}
+.no-left-spacing{
+    padding-left: 0px !important; /* bad practice!!! */
+}
+.containerr{
+    background-position: left top;
+    background-repeat: no-repeat; /*това е ясно*/
+    background-size: contain; /*кара цялата снимка да е на заден фон*/
+    background-position: -20px;/* контролира кръга на къде ще се измести*/
+    
+
+    
+}
+.var_height{
+    width: 20px; /*някво малко число, за да е 2D контейнера и да хване височината, която ВЕЧЕ ме интересува*/
+    height: 40vw; /*контролирам как да се променя контейнера ~vw*/
+    max-height: 300px; /*Колко да е голям при голям екран*/
+    min-height: 170px; /*Колко да е голям при малък екран*/
+}
+.text-align {
+    padding-top: min(110px, 20vw); /* Will use the smaller value between 300px and 20vw */ /*px са за голям екран, vw са за малък! АКо беше max() е обратното*/
+}
+@media  screen and (max-width:555px ) {
+    .padding-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+}
+@media  screen and (max-width:412px ) {
+    .padding-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    h2{
+        font-size: 70pt;
+    }
+}
+@media screen and (min-width: 729px) and (max-width: 871px) {
+    
+    h2{
+        font-size: 62pt;
+    }
+    
+}
+@media screen and (min-width: 518px) and (max-width: 746px) {
+    h2 {
+        font-size: 45pt;
+    }
+    h4{
+        font-size: 35pt;
+        top: 30px;
+    }
+    
+}
+
+
+@media screen and (max-width:518px) {
+    h2, h4 {
+        font-size: 35pt;
+    }
+    p{
+        font-size: 8pt;
+    }
+    h4{
+        top: 28px;
+    }
+}
+@media screen and (max-width: 395px) {
+    h2 {
+        font-size: 28pt;
+        letter-spacing: -3px;
+    }
+    h4{
+        font-size: 28pt;
+        top: 20px;
+    }
+    #phones{
+        display: none;
+    }
+    #big-phones{
+        display: block;
+    }
+}
+
+
+
+

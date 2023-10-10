@@ -1,0 +1,47 @@
+body{
+    background-color: #2C2C2C;
+    color: white;
+
+}
+.containerr{
+    background-position: left top;
+    background-repeat: no-repeat; /*това е ясно*/
+    background-size: contain; /*кара цялата снимка да е на заден фон*/
+    background-position: -20px;/* контролира кръга на къде ще се измести*/
+    
+
+    
+}
+h3{
+    margin: 0px;
+}
+.var_height{
+    width: 20px; /*някво малко число, за да е 2D контейнера и да хване височината, която ВЕЧЕ ме интересува*/
+    height: 40vw; /*контролирам как да се променя контейнера ~vw*/
+    max-height: 300px; /*Колко да е голям при голям екран*/
+    min-height: 170px; /*Колко да е голям при малък екран*/
+}
+.text-align {
+    padding-top: min(110px, 20vw); /* Will use the smaller value between 300px and 20vw */ /*px са за голям екран, vw са за малък! АКо беше max() е обратното*/
+}
+/* това ми е от самият файл; Не е нужно иначе*/
+.padding-container{
+    padding-left: 4rem;
+}/* това ми е от самият файл; Не е нужно иначе*/
+ h3{
+    font-size: 20pt;
+ }/* това ми е от самият файл; Не е нужно иначе*/
+ @media  screen and (max-width:555px ) {
+    .padding-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+}/* това ми е от самият файл; Не е нужно иначе*/
+@media  screen and (max-width:412px ) {
+    .padding-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+}
